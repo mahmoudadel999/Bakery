@@ -1,0 +1,383 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Alegreya, sans;
+  box-sizing: border-box;
+}
+.clear-fix {
+  clear: both;
+}
+.container {
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+
+.home {
+  background-image: url('../images/drew-coffman-1872.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+.home::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000012;
+  left: 0;
+  top: 0;
+}
+
+.header {
+  padding: 20px 0;
+    }
+
+.header .logo {
+  width: 50%;
+  cursor: pointer;
+  float: left;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.link-item {
+  float: left;
+  list-style: none;
+  padding-top: 20px;
+}
+
+.links .link-item a {
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.links .link-item a:hover {
+  color: #e0c690;
+}
+
+.content {
+  color: #fff;
+  text-align: center;
+  width: 700px;
+  margin: 90px auto;
+}
+
+.content h1 {
+  font-size: 70px;
+}
+
+.content p {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.content button {
+  padding: 20px 40px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.content button.learn {
+  background-color: #8e7754;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.content button.learn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.content button.contact {
+  background: transparent;
+  border: 1px solid #fff;
+  margin-left: 10px;
+}
+.content button.contact:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.scroll-btn {
+  width: 40px;
+  height: 70px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+}
+
+.scroll-btn span {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fade 2s infinite linear;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.who-we-are {
+  padding: 80px 0;
+  gap: 50px;
+}
+.who-we-are img {
+  width: 40%;
+  float: left;
+}
+
+.who-we-are .del {
+  width: 50%;
+  float: right;
+}
+
+.who-we-are .del .text h2 {
+  font-weight: 400;
+  font-size: 32px;
+}
+.who-we-are .del .text p {
+  line-height: 2.1;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.who-we-are .del .text {
+  margin-bottom: 30px;
+}
+.who-we-are .del .line {
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.who-we-are .del .line img {
+  width: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.who-we-are .del ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+.who-we-are .del ul li p {
+  float: left;
+  padding: 10px;
+}
+
+.our {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
+.our .container {
+  gap: 50px;
+}
+
+.our img {
+  width: 40%;
+  background-color: #f8f8f8;
+}
+
+.our .del .text {
+  float: right;
+  width: 50%;
+  margin-top: 50px;
+  background-color: #f8f8f8;
+}
+.our .del .text h2 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.our .del .text .first-p {
+  margin-bottom: 30px;
+  line-height: 2.1;
+  font-size: 18px;
+}
+
+.our-baking {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.our-baking h2 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.our-baking p {
+  margin-bottom: 30px;
+  line-height: 2.1;
+  font-size: 18px;
+}
+.type-food img {
+  width: 100%;
+}
+
+.box {
+  width: 366px;
+  float: left;
+  margin: 0 10px;
+}
+
+.box h3 {
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.contact {
+  padding: 80px;
+  background-color: #f8f8f8;
+}
+.contact .left {
+  width: 40%;
+  float: left;
+}
+
+.contact h2 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.contact span {
+  padding: 30px 0;
+  font-size: 18px;
+}
+.contact .del {
+  margin: 20px 0;
+}
+.contact .line {
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.contact .line img {
+  width: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  float: left;
+  background-color: #8e7754;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.contact ul {
+  margin-top: 20px;
+}
+.contact ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.contact ul li p {
+  padding: 10px;
+  float: left;
+}
+
+.contact .right {
+  width: 50%;
+  float: right;
+}
+.contact .right img {
+  width: 100%;
+  float: right;
+}
+
+.footer {
+  background-color: #403d38;
+  padding: 80px 0;
+}
+.footer .col {
+  float: left;
+  width: calc(100% / 4);
+  padding: 10px;
+}
+
+.footer .col p {
+  color: #969696;
+  margin-bottom: 20px;
+}
+.footer .col ul li {
+  padding: 10px;
+  margin-right: 20px;
+  list-style: none;
+  color: #969696;
+}
+.footer .col ul li:not(:last-child) {
+  border-bottom: 1px solid #505050;
+}
+.footer .col h4 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.last-section {
+  background-color: #353330;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.last-section p {
+  color: #969696;
+  margin: 30px 0;
+}
+
+.last-section p span {
+  color: #bc904c;
+}
+
+.last-section a img {
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #484540;
+  transition: color 0.5s;
+}
+
+.last-section a img.facebook:hover {
+  color: #fff;
+  background-color: #3b5998;
+}
+.last-section a img.google:hover {
+  background-color: #dd4b39;
+}
+.last-section a img.linkedin:hover {
+  background-color: #007bb5;
+}
+.last-section a img.twitter:hover {
+  background-color: #00aced;
+}
